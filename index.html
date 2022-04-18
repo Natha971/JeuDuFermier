@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="bodyContent">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#jeu">Jeu du fermier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#mine">La Mine</a>
+                    </li>
+            </div>
+    </nav>
+    <h1 id="jeu" style="text-align: center;">Jeu du fermier</h1>
+    <span id="argent" style="text-align: center;"></span>
+    <br><br>
+
+    <div id="boxParent">
+
+        <div id="boxCarotte">
+            <span id="champCarotte"></span>
+            <br>
+            <span id="carotte"></span>
+            <br>
+            <div id="list">
+                <img id="imageCarotte" src="img/carotte.png" alt="" width="30">
+            </div>
+            <br><br>
+        </div>
+
+        <div id="boxAvocat">
+            <span id="champAvocat"></span>
+            <br>
+            <span id="avocat"></span>
+            <br>
+            <div id="list2">
+                <img id="imageAvocat" src="img/avocat.png" alt="" width="30">
+            </div>
+            <br><br>
+        </div>
+
+        <div id="boxBio">
+            <span id="champBio"></span>
+            <br>
+            <span id="produitBio"></span>
+            <br>
+            <div id="list3">
+                <img id="imageBio" src="img/bio.jpeg" alt="" width="30">
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <span id="rentabilite" style="text-align: center;"></span>
+
+    <div id="boxButton">
+        <button type="button" class="btn btn-danger" id="vendre">Vendre ses legumes</button>
+        <button type="button" class="btn btn-warning" id="acheterChampCarotte">Acheter un champ de carottes ( 10$ )</button>
+        <button type="button" class="btn btn-success" id="acheterChampAvocat">Acheter un champ d'avocat ( 20$ )</button>
+        <button type="button" class="btn btn-success" id="acheterChampBio">Acheter un champ de produits bio ( 5$ )</button>
+
+    </div>
+
+
+    <div id="buttonOption">
+        <button id="openMine" type="button" class="btn btn-secondary">Entrer dans la mine ( 100$ )</button>
+        <button id="openMagasin" type="button" class="btn btn-secondary">Entrer dans le magasin</button>
+    </div>
+
+
+    <button id="alertGagne" class="button" data-modal="modalOne"></button>
+
+    <div id="modalOne" class="modal">
+        <div class="modal-content">
+            <div class="contact-form">
+                <div id="videoFinal"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="div2">
+        <div id="magasin">
+            <h1 style="text-align: center;">Magasin</h1>
+            <div id="imageMagasin">
+
+                <a id="arrosoir"></a>
+                <a id="engrais"></a>
+                <a id="tuyau_automatique"></a>
+            </div>
+            <div id="prixMagasin">
+                <div class="popup" onclick="myFunction('arrosoir')">
+                    <a id="arrosoirPrix"></a>
+                    <span class="popuptext" id="myPopup">
+                        Réduit de moitié le temps de production d'un champ pendant 20 secondes
+                        <button id="acheterArrosoir">Acheter</button>
+                    </span>
+                </div>
+                <div class="popup" onclick="myFunction('engrais')">
+                    <a id="engraisPrix"></a>
+                    <span class="popuptext" id="myPopup2">
+                        Multiplie par deux la production d'un champ jusqu'à la vente
+                        <button id="acheterEngrais">Acheter</button>
+                    </span>
+                </div>
+                <div class="popup" onclick="myFunction('tuyauAutomatique')">
+                    <a id="tuyau_automatiquePrix"></a>
+                    <span class="popuptext" id="myPopup3">
+                        Multiplie par 3 la production d'un champ pendant 10 secondes
+                        <button id="acheterTuyauAutomatique">Acheter</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="possession">
+            <h3>Mes objets</h3>
+            <h4>Accessoires</h4>
+            <div id="list6">
+                <!--<div class="popup">
+                    <span class="popuptext" id="myPopup5">
+                        Où voulez vous appliquer votre accesoire ?
+                        <button id="choixCarotte">Champs de carottes</button>
+                        <button id="choixAvocat">Champs d'avocat</button>
+                        <button id="choixBio">Champs de produit bio</button>
+                    </span>
+                </div> -->
+
+                <span id="accessoires"></span>
+                <div id="action1"></div>
+
+            </div>
+            <h4>Gains</h4>
+            <div id="list5">
+                <span id="objet"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <div id="mine">
+        <h1 id="jeu" style="text-align: center;">Bienvenue dans la mine</h1>
+        <div id="boxRocher">
+            <div id="phrase">
+                <span id="relance"></span>
+            </div>
+
+            <div id="rocher">
+
+                <div id="list4">
+                    <a id="rocher1"></a>
+                    <a id="rocher2"></a>
+                    <a id="rocher3"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

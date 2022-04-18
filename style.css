@@ -1,0 +1,269 @@
+#acheterChampBio {
+    background-color: yellow;
+    border-color: yellow;
+    color: black;
+}
+
+#argent {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: x-large;
+    color: red;
+}
+
+#boxAvocat {
+    width: 45%;
+    text-align: center;
+    box-shadow: 0px 0px 1em 10px greenyellow;
+    margin: auto 3em;
+    padding: 1em;
+    visibility: hidden;
+    margin-top: 5em;
+}
+
+#bodyContent {
+    background-image: url('img/champs.png');
+    background-repeat: repeat-y;
+    background-position: center center;
+}
+
+#boxBio {
+    width: 45%;
+    text-align: center;
+    box-shadow: 0px 0px 1em 10px yellow;
+    margin: auto 3em;
+    padding: 1em;
+    visibility: hidden;
+    margin-top: 5em;
+}
+
+#boxButton {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+#boxCarotte {
+    width: 45%;
+    text-align: center;
+    box-shadow: 0px 0px 1em 10px orange;
+    margin: auto 3em;
+    padding: 1em;
+    margin-top: 5em;
+}
+
+#boxParent {
+    display: flex;
+}
+
+#boxRocher {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    box-shadow: 0px 0px 1em 10px black;
+    margin: auto 3em;
+    padding: 1em;
+    margin-bottom: 5em;
+}
+
+#buttonOption {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+#div2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#imageMagasin {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin: auto 3em;
+    padding: 1em;
+    margin-bottom: 5em;
+}
+
+#magasin {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    box-shadow: 0px 0px 1em 10px black;
+    margin: auto 3em;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+#mine {
+    display: flex;
+    flex-direction: column;
+}
+
+#mine,
+.hide {
+    visibility: hidden;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    margin: 50px auto;
+    border: 1px solid #999;
+    width: 60%;
+    text-align: center;
+    background: transparent;
+}
+
+#phrase {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+#possession {
+    width: 45%;
+    text-align: center;
+    box-shadow: 0px 0px 1em 10px black;
+    margin: auto 3em;
+    padding: 1em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+#prixMagasin {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin: auto 3em;
+    padding: 1em;
+    margin-bottom: 5em;
+}
+
+#rentabilite {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: x-large;
+    color: red;
+    margin-top: 10%;
+}
+
+#rocher {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+
+/* Popup container */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* The actual popup (appears on top) */
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+
+/* Popup arrow */
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#rocher6 {
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
